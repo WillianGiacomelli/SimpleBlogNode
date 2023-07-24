@@ -1,6 +1,6 @@
 ## Blog Simples com Bootstrap e API Node.js/Express
 
-Este é um blog simples desenvolvido utilizando Bootstrap para o frontend e uma API construída em Node.js/Express para gerenciar as notícias. O blog permite visualizar as notícias existentes e também cadastrar novas notícias, com título e conteúdo. As notícias são armazenadas em uma lista de objetos local na API.
+Este é um blog simples desenvolvido utilizando Bootstrap para o frontend e uma API construída em Node.js/Express para gerenciar as notícias. O blog permite visualizar as notícias existentes e também cadastrar novas notícias, com título e conteúdo, assim como alterar a notícia e fazer a exclusão da mesma. As notícias são armazenadas em uma lista de objetos local na API.
 
 ## 🚀 Tecnologias
 
@@ -41,21 +41,21 @@ npm start
 
 O blog possui as seguintes funcionalidades:
 
-🔹Visualizar todas as notícias existentes.
-🔹Cadastrar novas notícias, fornecendo título e conteúdo.
-🔹Armazenar as notícias em uma lista de objetos local na API.
-🔹Alterar notícias utilizando o id da mesma.
-🔹Exluir notícias utilizando o id.
+🔹Visualizar todas as notícias existentes.</br>
+🔹Cadastrar novas notícias, fornecendo título e conteúdo.</br>
+🔹Armazenar as notícias em uma lista de objetos local na API.</br>
+🔹Alterar notícias utilizando o id da mesma.</br>
+🔹Exluir notícias utilizando o id.</br>
 
 #### 🔵 API Endpoints
 
 A API possui os seguintes endpoints e possui a documentação do insomnia na pasta da API:
 
-GET /posts: Retorna a lista de todas as notícias cadastradas.
-GET /posts/:id: Retorna uma noticia específica pelo id
-POST /posts: Cadastra uma nova notícia com base nos dados fornecidos no corpo da requisição.
-PUT /posts:id: Altera uma notícia pelo id
-DELETE /posts:id: Deleta uma notícia
+GET /posts: Retorna a lista de todas as notícias cadastradas.</br>
+GET /posts/:id: Retorna uma noticia específica pelo. id</br>
+POST /posts: Cadastra uma nova notícia com base nos dados fornecidos no corpo da requisição.</br>
+PUT /posts:id: Altera uma notícia pelo id.
+DELETE /posts:id: Deleta uma notícia.</br>
 
 #### 🔵 Considerações finais
 
