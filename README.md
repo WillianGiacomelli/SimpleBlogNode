@@ -45,17 +45,17 @@ O blog possui as seguintes funcionalidades:
 🔹Cadastrar novas notícias, fornecendo título e conteúdo.</br>
 🔹Armazenar as notícias em uma lista de objetos local na API.</br>
 🔹Alterar notícias utilizando o id da mesma.</br>
-🔹Exluir notícias utilizando o id.</br>
+🔹Excluir notícias utilizando o id.</br>
 
 #### 🔵 API Endpoints
 
 A API possui os seguintes endpoints e possui a documentação do insomnia na pasta da API:
 
 GET /posts: Retorna a lista de todas as notícias cadastradas.</br>
-GET /posts/:id: Retorna uma noticia específica pelo. id</br>
+GET /posts/:id : Retorna uma noticia específica pelo. id</br>
 POST /posts: Cadastra uma nova notícia com base nos dados fornecidos no corpo da requisição.</br>
-PUT /posts:id: Altera uma notícia pelo id.
-DELETE /posts:id: Deleta uma notícia.</br>
+PUT /posts/:id : Altera uma notícia pelo id.</br>
+DELETE /posts/:id : Deleta uma notícia.</br>
 
 #### 🔵 Considerações finais
 
