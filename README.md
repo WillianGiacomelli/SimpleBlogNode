@@ -44,15 +44,19 @@ O blog possui as seguintes funcionalidades:
 🔹Visualizar todas as notícias existentes.
 🔹Cadastrar novas notícias, fornecendo título e conteúdo.
 🔹Armazenar as notícias em uma lista de objetos local na API.
+🔹Alterar notícias utilizando o id da mesma.
+🔹Exluir notícias utilizando o id.
 
 #### 🔵 API Endpoints
 
-A API possui os seguintes endpoints:
+A API possui os seguintes endpoints e possui a documentação do insomnia na pasta da API:
 
 GET /posts: Retorna a lista de todas as notícias cadastradas.
 GET /posts/:id: Retorna uma noticia específica pelo id
 POST /posts: Cadastra uma nova notícia com base nos dados fornecidos no corpo da requisição.
+PUT /posts:id: Altera uma notícia pelo id
+DELETE /posts:id: Deleta uma notícia
 
 #### 🔵 Considerações finais
 
-Este blog simples é apenas um projeto de exemplo com fins educativos, demonstrando a integração entre Bootstrap e uma API Node.js/Express para gerenciamento de notícias. Ele não possui recursos avançados de persistência de dados e é recomendado apenas para fins de aprendizado.
+Este blog simples é apenas um projeto de exemplo com fins educativos, demonstrando a integração entre Bootstrap e uma API Node.js/Express para gerenciamento de notícias. Ele não possui recursos avançados de persistência de dados e foi feito apenas para fins de aprendizado.

@@ -10,4 +10,8 @@ routes.get("/posts/:id", postsController.getById);
 
 routes.post("/posts", postsController.create);
 
+routes.put("/posts/:id", postsController.update);
+
+routes.delete("/posts/:id", postsController.remove);
+
 module.exports = routes;

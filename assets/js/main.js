@@ -13,6 +13,8 @@ const postForm = document.querySelector("#post-form");
 const titleInput = document.querySelector("#title");
 const bodyInput = document.querySelector("#body");
 
+
+
 //Função para pegar todos os posts
 async function getAllPosts() {
   try {
@@ -87,6 +89,7 @@ async function createPost(post) {
   }
 }
 
+
 if (!postId) {
   getAllPosts();
 
@@ -108,3 +111,4 @@ if (!postId) {
 } else {
   getPost(postId);
 }
+

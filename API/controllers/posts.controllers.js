@@ -61,4 +61,53 @@ const create = (req, res) => {
   }
 };
 
-module.exports = { list, getById, create };
+const update = (req, res) => {
+  try {
+    const { id } = req.params;
+    const { title, body } = req.body;
+
+    const postIndex = posts.findIndex((p) => p.id == id);
+
+    if (postIndex < 0) {
+      return res.json({
+        error: "@post/update",
+        message: `post not found ${id}`,
+      });
+    } else {
+      const postUpdated = {
+        id: id,
+        title,
+        body,
+      };
+
+      posts[postIndex] = postUpdated;
+
+      return res.json(postUpdated);
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const remove = (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const postIndex = posts.find((p) => p.id == id);
+
+    if (postIndex < 0) {
+      return response.status(400).json({
+        error: "@post/remove",
+        message: `post not found ${id}`,
+      });
+    } else {
+      posts.splice(postIndex, 1);
+
+      return res.send();
+    }
+  } catch (error) {
+    console.log("Error:", error);
+  }
+};
+
+module.exports = { list, getById, create, update, remove };
